@@ -14,7 +14,7 @@ const jokeJS1 = JSON.parse(`{"id":18,"type":"programming","setup":"Why did the p
 console.log(jokeJS1);
 
 //1b
-p1.innerHTML = jokeJS1.setup;
+p1.innerText = jokeJS1.setup;
 
 //1c
 p2.innerText = jokeJS1.punchline;
@@ -57,6 +57,7 @@ async function quoteFunc (){
     }
 }
 quoteFunc();
+
 // 4
 const fourth = document.querySelector('#fourth');
 const p7 = document.createElement('p');
@@ -89,7 +90,7 @@ axios.get(`https://pokeapi.co/api/v2/pokemon/pikachu`)
 })
 .catch (err => {
     console.log(err);
-    alert(`You did NOT catch THAT POKEMON! :()`)
+    alert(`You did NOT catch THAT POKEMON! :()`);
     
 });
 
@@ -110,3 +111,6 @@ async function bonus6 () {
 }
 
 bonus6();
+
+
+
